@@ -1,0 +1,73 @@
+@import '../../../GlobalStyles/variables';
+.header {
+    position: fixed;
+    width: 224px;
+    height: 100vh;
+    background-color: $primary-color12;
+    display: flex;
+    padding: 0 12px;
+    flex-direction: column;
+    justify-content: space-between;
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.2);
+    .logo{
+        padding: 8px;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        align-items:start;
+        justify-content: space-around;
+        border-bottom: 1px solid #000;
+        img{
+            padding: 6px;
+            width: 152px;
+            border-radius: 50%;
+        }
+    }
+}
+
+.nav {
+    
+    margin-top: 28px;
+
+    ul {
+        
+        list-style: none;
+        padding: 0;
+    }
+
+    li {
+        height: 48px;
+        line-height: 48px;
+    }
+
+    a {
+        text-decoration: none;
+        color: $primary-color1;
+        font-size: 14px;
+        display: flex;
+        align-items: center;
+        transition: color 0.2s, transform 0.2s;
+        &:hover {
+            font-weight: 600;
+            color: $primary-color6;
+            transform: scale(1.1); /* Phóng to văn bản khi hover */
+        }
+    }
+
+    i {
+        width: 20px;
+        margin:0 20px;
+        font-size: 20px;
+    }
+}
+
+.selected {
+    a{
+        color: $primary-color14;
+        font-weight: 600;
+    }
+    background-color: $primary-color13;
+    width: 100%;
+    border-radius: 6px;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
+}

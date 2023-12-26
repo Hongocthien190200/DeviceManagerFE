@@ -1,0 +1,155 @@
+@import "../../Components/GlobalStyles/variables";
+
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+//Body 
+.devices-container {
+    margin-top: 48px;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    height: calc(100vh);
+    background-color: $primary-color5;
+
+}
+
+.enlarged-image-modal {
+    position: fixed;
+    top: 50%;
+    left: 45%;
+    transform: translate(-50%, -50%);
+    width: 1040px;
+    max-width: 80%;
+    /* Thay đổi giá trị tùy thuộc vào thiết kế của bạn */
+    height: 585px ;
+    background: rgba(0, 0, 0, 0.8);
+    z-index: 1000;
+}
+
+.enlarged-image {
+    width: 1120px;
+    height: 630px;
+}
+
+.maintenance-repair {
+    height: fit-content;
+    background-color: $primary-color5;
+    width: calc(100% - 364px);
+    transition: width 0.3s;
+    display: flex;
+    flex-direction: column;
+
+    &.hidden {
+        // transition: width 0.3s;
+        width: calc(100% - 24px);
+    }
+}
+
+//Thông tin Thiết bị
+.descriptionDevice {
+    position: fixed;
+    right: 0;
+    height: 100%;
+    width: 364px;
+    padding-right: 24px;
+    background-color: $primary-color1;
+    transition: width 0.3s;
+    overflow: hidden;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: row;
+    max-height: 650px;
+
+    &.hidden {
+        padding-top: 24px;
+        width: 24px;
+        overflow: hidden;
+        padding: 0;
+
+    }
+
+    .imageContainer {
+        padding-top: 24px;
+
+        img {
+            width: 320px;
+            height: 180px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-shadow: 0 0 4px rgba(0, 0, 0, 0.3);
+        }
+    }
+}
+
+.detailsContainer {
+    margin: 4px 0;
+
+    .table {
+        width: 100%;
+        border-collapse: collapse;
+        box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
+        font-size: 11px;
+
+        th {
+            height: 28px;
+            border: 1px solid $primary-color4;
+            background-color: $primary-color4;
+            color: $primary-color5;
+            text-align: right;
+            padding: 0;
+
+            button {
+                cursor: pointer;
+                width: 28px;
+                height: 28px;
+                // border: 1px solid #cdcbcb
+                border-radius: 4px;
+                background-color: #fff;
+                opacity: 0.8;
+
+                &:hover {
+                    opacity: 1;
+                    background-color: $primary-color6;
+                }
+            }
+        }
+
+        td {
+            line-height: 14px;
+            border: 1px solid #e0e0e0;
+            text-align: left;
+            padding: 4px;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+
+        tr:nth-child(odd) {
+            background-color: #fff;
+        }
+    }
+}
+
+.show-button {
+    margin-right: 4px;
+    cursor: pointer;
+    font-size: 24px;
+    background-color: $primary-color1;
+    border: none;
+
+    &:hover {
+        scale: (1.2);
+    }
+}

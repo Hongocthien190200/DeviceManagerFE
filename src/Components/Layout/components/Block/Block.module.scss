@@ -1,0 +1,20 @@
+@import "../../../GlobalStyles/variables";
+
+.block-container {
+    max-width: 100%;
+    padding: 40px;
+    margin-top: 48px;
+
+    .block-wrap {
+        width: 100%;
+        background-color: $primary-color5;
+        padding: 20px;
+        border-radius: 4px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+        text-align: center;
+        h1 {
+            font-size: 24px;
+        }
+    }
+
+}

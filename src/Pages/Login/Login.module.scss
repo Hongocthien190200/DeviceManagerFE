@@ -1,0 +1,90 @@
+@import "../../Components/GlobalStyles/variables";
+
+.login-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: $primary-color5;
+  box-shadow: 0 0 0 5px rgba(0, 0, 0, 0.3);
+  .login-container {
+    width: 300px;
+    padding: 20px;
+    border: 1px solid #9f9e9e;
+    border-radius: 16px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    img{
+      width: 298px;
+      margin: -20px 0 0 -20px;
+      border-radius: 16px 16px 0 0;
+    }
+    .input-box {
+      margin: 4px 0;
+      background: #fff;
+      border: 1px solid #ccc;
+      border-radius: 16px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      padding: 0 12px;
+      i {
+        color: $primary-color17;
+      }
+    }
+
+    .input-box:focus-within {
+      border-color: #0e46cd;
+      box-shadow: 0 0 5px #0e46cd;
+    }
+
+    .login-title {
+      font-size: 2rem;
+      font-weight: bold;
+      margin: 8px 0px;
+      text-align: center;
+      color: $primary-color18;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+
+      label {
+        font-weight: bold;
+        margin-bottom: 5px;
+      }
+
+      input {
+        font-size: 16px;
+        padding: 8px;
+        border: none;
+        outline: none;
+      }
+
+      input::placeholder {
+        font-size: 14px;
+        color: $primary-color17;
+      }
+
+      .login-error {
+        color: red;
+        margin-bottom: 10px;
+      }
+
+      button {
+        padding: 10px 0;
+        background: linear-gradient(to right, #FBC032, #FB8336);
+        color: white;
+        border: none;
+        border-radius: 16px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+        font-size: 14px;
+        font-weight: 600;
+        opacity: 0.8;
+        &:hover {
+          opacity: 1;
+        transform: scale(1.02);
+        }
+      }
+    }
+  }
+}

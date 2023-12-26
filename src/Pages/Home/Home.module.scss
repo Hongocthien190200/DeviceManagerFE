@@ -1,0 +1,64 @@
+@import "../../Components/GlobalStyles/variables";
+
+body {
+    background-color: $primary-color3;
+}
+
+.home {
+    margin-top: 48px;
+    padding: 24px;
+    display: flex;
+    flex-wrap: wrap;
+    // justify-content: space-between;
+}
+
+.card {
+    width: 22%;
+    height: 124px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 16px;
+    text-align: center;
+    border-radius: 5px;
+    text-decoration: none;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 600;
+    transition: transform 0.2s, box-shadow 0.2s;
+    position: relative;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.circle {
+    width: 56px;
+    height: 56px;
+    background-color: #fff;
+    color: $primary-color10;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position:absolute ;
+    top: -12px;
+    left: -10px;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.title {
+    flex-grow: 1;
+    display: flex;
+    align-items: end;
+    justify-content:space-around;
+    margin-left: 20px;
+    margin-bottom: 32px;
+}
+.icon-title{
+    font-size: 32px;
+}

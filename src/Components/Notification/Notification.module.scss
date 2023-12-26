@@ -1,0 +1,61 @@
+@import "../GlobalStyles/variables";
+//modal Notifications SUcces 
+.success-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.success-modal-content {
+    background: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    position: relative;
+
+    .icon-success {
+        font-size: 36px;
+
+        i {
+            color: $primary-color7;
+        }
+    }
+
+    .icon-failed {
+        font-size: 36px;
+
+        i {
+            color: $primary-color8;
+        }
+    }
+}
+
+.success-modal h2 {
+    font-size: 24px;
+    margin: 12px 0;
+    padding: 0;
+    color: #333;
+}
+
+.success-modal .close-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    font-size: 24px;
+    color: #777;
+    background: none;
+    border: none;
+}
+
+.success-modal .close-button:hover {
+    color: #333;
+}
