@@ -1,6 +1,6 @@
 import axios from "axios";
 import jwt_decode from "jwt-decode";
-axios.defaults.baseURL = 'http://localhost:4000';
+axios.defaults.baseURL = 'https://sosdevicemanager.onrender.com';
 
 const refreshToken = async (token) => {
     try {
