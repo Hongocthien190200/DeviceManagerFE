@@ -70,7 +70,7 @@ import {
 } from "./repairHisSlice";
 
 // axios.defaults.baseURL = 'https://thienho.gcalls.vn';
-axios.defaults.baseURL = 'http://localhost:4000';
+axios.defaults.baseURL = 'https://sosdevicemanager.onrender.com';
 
 //LẤY TẤT CẢ DANH SÁCH TÀI KHOẢN ĐÃ ĐĂNG NHẬP
 export const getAlllistLogin = async (accessToken, dispatch, axiosJWT) => {
